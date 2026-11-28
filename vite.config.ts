@@ -14,12 +14,13 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [
 		mdsvex({
+            extensions: ['.svx', '.md'],
 			heading_ids: true,
 			unwrap_images: true,
 			plugins: [
 				code_blocks(),
 				figures(),
-				anchors(),
+				// anchors(),
 				toc(),
 				external_links(),
 				citations(),
